@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tạo Form lấy đăng kí người dùng</title>
 </head>
 <body>
-    <form>
-        <label>Họ và tên:</label><br />
-        <input type="text" name="fullname" required/><br /><br>
-        <label>Email:</label><br />
-        <input type="text" name="email" required/><br /> <br>
-        <label>Số điện thoại:</label><br />
-        <input type="text" name="phonenumber" required/><br /><br>
+    <form action="">
+        <label for="fullname">Họ và tên:</label><br>
+        <input type="text" name="fullname" id="fullname" required><br>
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <br>
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="tel" name="phone" id="phone" required><br>
+        <br>
         <label for="gender">Giới tính:</label><br>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Nam</label>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Nữ</label><br><br>
-        <input type="submit" value="Đăng ký">
-     </form>
+        <input type="radio" name="gender" value="Nam">Nam
+        <input type="radio" name="gender" value="Nữ">Nữ
+        <br><br>
+        <input type="submit" value="Đăng kí">
+    </form>
 </body>
 </html>
